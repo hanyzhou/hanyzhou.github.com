@@ -12,8 +12,8 @@
   </head>
 <body  data-ng-controller="angularctrl" data-ng-init="init()">
 <h1>Test-Github-Page</h1>
-<ul class="List-title" ng-repeat="node in liste">
-	<li class="clickable"  data-ng-click='changeEtape(node.key)'><span>{{node.title}}<span></li>
+<ul class="List-title">
+	<li  ng-repeat="node in liste" class="clickable"  data-ng-click='changeEtape(node.key)'><span>{{node.title}}<span></li>
 </ul>
 <div class="page-contenue">
 	<div class="" data-ng-show="etape == 0">

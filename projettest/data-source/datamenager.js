@@ -52,7 +52,7 @@ return [{
 		},
 		{
 			"key" : "5",
-			"title" :"tres long title en test avec des plusieur soutitle contenue",
+			"title" :"tres long title en test avec des plusieur sous title contenue",
 			"datasource" : [{
 				"type": "soustitle",
 				"soustitle": "soustitle1",
