@@ -1,48 +1,34 @@
-<html ng-app="myApp">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset='utf-8' />
-	<link rel = "shortcut icon" href='data-source/img/favicon.ico'> 
-    <link rel="stylesheet" type="text/css" media="screen" href="styles-source/stylesheet.css">
-    <title>Test-Github-Page</title>
-	<script src="./js-source/angular.min.js"></script>
-	<script src="./data-source/datamenager.js"></script>
-	<script src="./js-source/main.js"></script>
-	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  </head>
-<body  data-ng-controller="angularctrl" data-ng-init="init()">
-<h1>Test-Github-Page</h1>
-<ul class="List-title">
-	<li  ng-repeat="node in liste" class="clickable"  data-ng-click='changeEtape(node.key)'><span>{{node.title}}<span></li>
-</ul>
-<div class="page-contenue">
-	<div class="" data-ng-show="etape == 0">
-		<span>{{liste[0].datasource[0].testtext}}</span>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>LE DOPAGE DANS LE SPORT</title>
+<link rel="stylesheet" type="text/css" media="screen" title="CSS par defaut" href="./styles-source/style.css">
+<script type="text/javascript" charset="utf-8" src="./js-source/jsmain.js"></script>
+</head>
+<body>
+<h1 id="header">
+	<a href="javascript:pageContent(0)" title="Retour a l'accueil">
+		<span>LE DOPAGE DANS LE SPORT</span>
+	</a>
+</h1>
+<div id="sidebar">
+	<div class="menu">
+		<ul>
+		<li><a href="javascript:pageContent(0)">I – INTRODUCTION</a></li>
+		<li><a href="javascript:pageContent(1)">II - POURQUOI LES SPORTIFS SE DOPENT-IL ?</a></li>
+		<li><a href="javascript:pageContent(2)">III - TECHNIQUES DE DOPAGE AU XIX SIECLE</a></li>
+		<li><a href="javascript:pageContent(3)">IV – DOPAGE MODERNE : DOPANTS ET MODE D’ACTION SUR L’ORGANISME</a></li>
+		<li><a href="javascript:pageContent(4)">V – DOPAGE MODERNE : DANGERS SUR L’ORGANISME</a></li>
+		<li><a href="javascript:pageContent(5)">VI - POLITIQUE CONTRE LE DOPAGE</a></li>
+		<li><a href="javascript:pageContent(6)">VII – UN TEMOIGNAGE</a></li>
+		<li><a href="javascript:pageContent(7)">VIII - CONCLUSION</a></li>
+		<li><a href="javascript:pageContent(8)">IX - LEXIQUE</a></li>
+		</ul>
 	</div>
-	<div class="" data-ng-show="etape == 1">
-		<img style="width: 300px; height: 300px;" src="{{liste[1].datasource[0].urlimg}}"></img>
-	</div>
-	<div class="" data-ng-show="etape == 2">
-		<embed width="420" height="345" src="http://www.youtube.com/v/RBumgq5yVrA" type="application/x-shockwave-flash">
-		</embed>
-	</div>
-	<div class="" data-ng-show="etape == 3">
-		<span>{{liste[3].datasource[0].testtext}}</span>
-		<img style="width: 300px; height: 300px;" src="{{liste[3].datasource[1].urlimg}}"></img>
-	</div>
-	<div class="" data-ng-show="etape == 4">
-		<div data-ng-mouseover="openImage()" data-ng-mouseleave="hideImage()">{{liste[4].datasource[0].testtext}}</div>
-		<img data-ng-show="openImgAction" style="width: 300px; height: 300px;" src="{{liste[4].datasource[1].urlimg}}"></img>
-	</div>
-	<div class="" data-ng-show="etape == 5">
-		<div ng-repeat="L in liste[5].datasource">
-			<h5 class="clickable" data-ng-click="openSoustitle(L.soustitle)">{{L.soustitle}}</h5>
-			<div data-ng-show="soustitlestatus == L.soustitle">
-				<div>{{L.souscontenue[0].testtext}}</div>
-				<img style="width: 300px; height: 300px;" src="{{L.souscontenue[1].urlimg}}"></img>
-			</div>
-		<div>
-	</div>
+</div>
+<div id="content">
+<style type="text/css">ol{margin:0;padding:0}.c1{padding-top:5.4pt;margin-right:-71.2pt;direction:ltr;margin-left:-72pt;padding-bottom:3pt}.c3{line-height:1.0;margin-right:-71.2pt;text-align:center;direction:ltr;margin-left:-72pt}.c5{padding-top:5.4pt;margin-right:-71.2pt;direction:ltr;margin-left:-72pt}.c2{margin-right:-71.2pt;height:11pt;direction:ltr;margin-left:-72pt}.c11{line-height:1.0;margin-right:-71.2pt;direction:ltr;margin-left:-72pt}.c8{color:#3f3f3f;font-size:12pt;font-family:"Trebuchet MS"}.c12{max-width:466.5pt;background-color:#ffffff;padding:20pt 73.5pt 72pt 72pt}.c10{color:#3f3f3f;font-size:12pt;font-family:"Times New Roman"}.c6{color:#165160;font-size:15pt;font-family:"Times New Roman";font-weight:bold}.c0{color:#165160;font-size:12pt;font-family:"Times New Roman"}.c7{font-weight:bold}.c4{font-size:14pt}.c9{height:11pt}.c13{font-style:italic}.title{widows:2;padding-top:0pt;line-height:1.15;orphans:2;text-align:left;color:#000000;font-size:21pt;font-family:"Trebuchet MS";padding-bottom:0pt;page-break-after:avoid}.subtitle{widows:2;padding-top:0pt;line-height:1.15;orphans:2;text-align:left;color:#666666;font-style:italic;font-size:13pt;font-family:"Trebuchet MS";padding-bottom:10pt;page-break-after:avoid}li{color:#000000;font-size:11pt;font-family:"Arial"}p{color:#000000;font-size:11pt;margin:0;font-family:"Arial"}h1{widows:2;padding-top:10pt;line-height:1.15;orphans:2;text-align:left;color:#000000;font-size:16pt;font-family:"Trebuchet MS";padding-bottom:0pt;page-break-after:avoid}h2{widows:2;padding-top:10pt;line-height:1.15;orphans:2;text-align:left;color:#000000;font-size:13pt;font-family:"Trebuchet MS";font-weight:bold;padding-bottom:0pt;page-break-after:avoid}h3{widows:2;padding-top:8pt;line-height:1.15;orphans:2;text-align:left;color:#666666;font-size:12pt;font-family:"Trebuchet MS";font-weight:bold;padding-bottom:0pt;page-break-after:avoid}h4{widows:2;padding-top:8pt;line-height:1.15;orphans:2;text-align:left;color:#666666;font-size:11pt;text-decoration:underline;font-family:"Trebuchet MS";padding-bottom:0pt;page-break-after:avoid}h5{widows:2;padding-top:8pt;line-height:1.15;orphans:2;text-align:left;color:#666666;font-size:11pt;font-family:"Trebuchet MS";padding-bottom:0pt;page-break-after:avoid}h6{widows:2;padding-top:8pt;line-height:1.15;orphans:2;text-align:left;color:#666666;font-style:italic;font-size:11pt;font-family:"Trebuchet MS";padding-bottom:0pt;page-break-after:avoid}</style><div class="c12"><p class="c3"><span class="c6">INTRODUCTION</span></p><p class="c2"><span class="c7 c8"></span></p><p class="c5"><span class="c0 c7">DEFINITION DU DOPAGE SPORTIF</span></p><p class="c5"><span class="c0">Le dopage sportif est une pratique qui consiste &agrave; absorber des substances de type naturelle ou de synth&egrave;se, ou &agrave; utiliser des actes m&eacute;dicaux ad hoc afin de &nbsp;stimuler de mani&egrave;re artificielle la performance d&rsquo;un sportif notamment &agrave; l&rsquo;occasion des comp&eacute;titions.</span></p><p class="c5 c9"><span class="c0"></span></p><p class="c5"><span class="c0 c7">LE DOPAGE DANS LE SPORT : UNE VIEILLE HISTOIRE</span></p><p class="c5"><span class="c0">Cette pratique remonte &agrave; la nuit des temps et s&rsquo;observe partout. Les stimulants &eacute;taient d&eacute;j&agrave; au menu des athl&egrave;tes de l&rsquo;antiquit&eacute;.</span></p><p class="c5"><span class="c0">En effet, d&egrave;s le VI&egrave;me si&egrave;cle avant J.-C., les athl&egrave;tes grecs ing&eacute;raient d&eacute;j&agrave; des viandes vari&eacute;es selon la discipline sportive qu&rsquo;ils exer&ccedil;aient :<br> &ndash; les sauteurs mangeaient de la viande de ch&egrave;vre <br> &ndash; les boxeurs et les lanceurs, de la viande de taureau <br> &ndash; les lutteurs quant &agrave; eux pr&eacute;f&eacute;raient de la viande grasse de porc.</span></p><p class="c5"><span class="c0">Les populations primitives n&eacute;gro-africaines partagent avec les populations am&eacute;rindiennes ce besoin de dopants capables d&rsquo;accro&icirc;tre leur &eacute;nergie physique et psychique. Ainsi, les indig&egrave;nes d&rsquo;Am&eacute;rique du Sud m&acirc;chent les feuilles de coca, ceux d&rsquo;Afrique la noix de kola.</span></p><p class="c5"><span class="c0">Les chinois connaissent depuis plus de 3.000 ans les vertus stimulants du ginseng.</span></p><p class="c5"><span class="c0">Mais c&rsquo;est au XIX&egrave;me si&egrave;cle, avec les progr&egrave;s de la m&eacute;decine et la naissance du sport moderne que le dopage prend une autre envergure.</span></p><p class="c5 c9"><span class="c0"></span></p><p class="c5"><span class="c0">&laquo;&nbsp;</span><span class="c0 c13">Pour stimuler ses capacit&eacute;s physiques, l&rsquo;homme a d&rsquo;abord spontan&eacute;ment puis&eacute; dans les ressources de la nature. Le progr&egrave;s de la chimie ont fait exploser cette pratique traditionnelle. Tout aussi spontan&eacute;ment, on s&rsquo;est donc tourn&eacute; vers des produits, sans cesse plus nombreux, et par&eacute;s de toutes les vertus.&nbsp;&raquo;</span></p><p class="c5"><span class="c0">Par le docteur Patrick Laure, chercheur, sp&eacute;cialiste conduites dopantes</span></p><p class="c5 c9"><span class="c0 c7"></span></p><p class="c5"><span class="c0 c7">LE DOPAGE DANS LE SPORT : UN FLEAU MONDIAL</span></p><p class="c5"><span class="c0">Le dopage est devenu de nos jours une pratique tr&egrave;s r&eacute;pandue chez les sportifs professionnels y compris de haut niveau et des scandales de dopage viennent souvent entacher l&rsquo;image des manifestations sportives.</span></p><p class="c1"><span class="c0 c7">Mais, quels sont les effets et dangers du dopage sur l&rsquo;organisme et comment mieux lutter contre ce fl&eacute;au ?</span></p><p class="c3 c9"><span class="c6"></span></p><p class="c9 c11"><span class="c0"></span></p></div>
 </div>
 </body>
 </html>

@@ -1,0 +1,46 @@
+html {
+	background:url('./images/background.gif') repeat-x #3f8fee;
+	font-family: Tahoma, Verdana, Serif;
+	font-size: 10pt ;
+}
+body {
+	width: 800px;
+	margin: 25px auto;
+}
+#header {
+	border: 1px #000 solid;
+	height: 120px;
+	background:url('./images/header.jpg') no-repeat #FFF;
+}
+#header a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+#header a span {
+	display: none;
+}	
+#sidebar {
+	float: left;
+	width: 200px;
+	margin: 0 0 20px 0;
+}
+#sidebar .menu {
+	border: 1px #000 solid;
+	background:url('./images/degrade_v.png') no-repeat #FFFFFF;
+	margin: 20px 0 0 0;
+	padding: 0;
+	-moz-border-radius: 0 0 0 25px;
+}
+#content {
+	margin: 20px 0 0 220px;
+	padding: 10px;
+	border: 1px #000 solid;
+	background:url('images/degrade_v.png') repeat-x #FFF;
+	font-size: 12pt ;
+	line-height: 25px;	
+}
+
+
+
+

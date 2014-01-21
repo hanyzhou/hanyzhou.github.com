@@ -1,7 +1,7 @@
 var dataMenager = function(){
 return [{
 			"key" : "0",
-			"title" : "text",
+			"title" : "I – INTRODUCTION",
 			"datasource" : [{
 				"type": "text",
 				"testtext": "hdaihdiua hjdbfsk jdfzu dphf zkjdbf zlbhfz fleu zfkjlezbkhj dbsjl dbfozbhlehz hb fslejhbf lj sbfkjl eblzlj ffjzek hjezkbjfzhbfjzbf jzekfj snbhvhbzfjhzfjahbejzhj rfbjzbefzhjbf jzbhjkf bzhjf zkjbfzj bhjez bfzhj fjbzhe jbfhzjbfhskjlnbfslnvjbsnh fzjkehfhl jezkjk fzkj fsjhghfbvgqhjskfjlzbfm bezjekfezljhfzkjbfh bzgkhf bze fzjkbefjkezhbjlkKQKFJKVBKJ NQHFKJLHQJLKFQKJL lbkj frbjlez bjfl bzhj fh bsklje bfkjlezbkjf.",
@@ -10,7 +10,7 @@ return [{
 		},
 		{
 			"key" : "1",
-			"title" :"img",
+			"title" :"II - POURQUOI LES SPORTIFS SE DOPENT-IL ?",
 			"datasource" : [{
 				"type": "img",
 				"urlimg": "./data-source/img/imgtest.jpg"
@@ -18,7 +18,7 @@ return [{
 		},
 		{
 			"key" : "2",
-			"title" :"vedio",
+			"title" :"III - TECHNIQUES DE DOPAGE AU XIX SIECLE",
 			"datasource" : [{
 				"type": "video",
 				"urlvideo": "http://www.youtube.com/v/RBumgq5yVrA"
@@ -26,7 +26,7 @@ return [{
 		},
 		{
 			"key" : "3",
-			"title" :"textavecimg",
+			"title" :"IV – DOPAGE MODERNE : DOPANTS ET MODE D’ACTION SUR L’ORGANISME",
 			"datasource" : [{
 				"type": "text",
 				"testtext": "hdaihdiua hjdbfsk jdfzu dphf zkjdbf zlbhfz fleu zfkjlezbkhj dbsjl dbfozbhlehz hb fslejhbf lj sbfkjl eblzlj ffjzek hjezkbjfzhbfjzbf jzekfj snbhvhbzfjhzfjahbejzhj rfbjzbefzhjbf jzbhjkf bzhjf zkjbfzj bhjez bfzhj fjbzhe jbfhzjbfhskjlnbfslnvjbsnh fzjkehfhl jezkjk fzkj fsjhghfbvgqhjskfjlzbfm bezjekfezljhfzkjbfh bzgkhf bze fzjkbefjkezhbjlkKQKFJKVBKJ NQHFKJLHQJLKFQKJL lbkj frbjlez bjfl bzhj fh bsklje bfkjlezbkjf.",
@@ -39,7 +39,7 @@ return [{
 		},
 		{
 			"key" : "4",
-			"title" :"textouverimg",
+			"title" :"V – DOPAGE MODERNE : DANGERS SUR L’ORGANISME",
 			"datasource" : [{
 				"type": "text",
 				"testtext": "hdaihdiua hjdbfsk jdfzu dphf zkjdbf zlbhfz fleu zfkjlezbkhj dbsjl dbfozbhlehz hb fslejhbf lj sbfkjl eblzlj ffjzek hjezkbjfzhbfjzbf jzekfj snbhvhbzfjhzfjahbejzhj rfbjzbefzhjbf jzbhjkf bzhjf zkjbfzj bhjez bfzhj fjbzhe jbfhzjbfhskjlnbfslnvjbsnh fzjkehfhl jezkjk fzkj fsjhghfbvgqhjskfjlzbfm bezjekfezljhfzkjbfh bzgkhf bze fzjkbefjkezhbjlkKQKFJKVBKJ NQHFKJLHQJLKFQKJL lbkj frbjlez bjfl bzhj fh bsklje bfkjlezbkjf.",
@@ -52,7 +52,7 @@ return [{
 		},
 		{
 			"key" : "5",
-			"title" :"tres long title en test avec des plusieur sous title contenue",
+			"title" :"VI - POLITIQUE CONTRE LE DOPAGE",
 			"datasource" : [{
 				"type": "soustitle",
 				"soustitle": "soustitle1",
@@ -92,5 +92,45 @@ return [{
 					"urlimg": "./data-source/img/imgtest.jpg"
 				}]
 			}]
-		}];
+		},
+		{
+			"key" : "6",
+			"title" :"VII – UN TEMOIGNAGE",
+			"datasource" : [{
+				"type": "text",
+				"testtext": "hdaihdiua hjdbfsk jdfzu dphf zkjdbf zlbhfz fleu zfkjlezbkhj dbsjl dbfozbhlehz hb fslejhbf lj sbfkjl eblzlj ffjzek hjezkbjfzhbfjzbf jzekfj snbhvhbzfjhzfjahbejzhj rfbjzbefzhjbf jzbhjkf bzhjf zkjbfzj bhjez bfzhj fjbzhe jbfhzjbfhskjlnbfslnvjbsnh fzjkehfhl jezkjk fzkj fsjhghfbvgqhjskfjlzbfm bezjekfezljhfzkjbfh bzgkhf bze fzjkbefjkezhbjlkKQKFJKVBKJ NQHFKJLHQJLKFQKJL lbkj frbjlez bjfl bzhj fh bsklje bfkjlezbkjf.",
+				"urltextpage": ""
+			},
+			{
+				"type": "img",
+				"urlimg": "./data-source/img/imgtest.jpg"
+			}]
+		},
+		{
+			"key" : "7",
+			"title" : "VIII - CONCLUSION",
+			"datasource" : [{
+				"type": "text",
+				"testtext": "hdaihdiua hjdbfsk jdfzu dphf zkjdbf zlbhfz fleu zfkjlezbkhj dbsjl dbfozbhlehz hb fslejhbf lj sbfkjl eblzlj ffjzek hjezkbjfzhbfjzbf jzekfj snbhvhbzfjhzfjahbejzhj rfbjzbefzhjbf jzbhjkf bzhjf zkjbfzj bhjez bfzhj fjbzhe jbfhzjbfhskjlnbfslnvjbsnh fzjkehfhl jezkjk fzkj fsjhghfbvgqhjskfjlzbfm bezjekfezljhfzkjbfh bzgkhf bze fzjkbefjkezhbjlkKQKFJKVBKJ NQHFKJLHQJLKFQKJL lbkj frbjlez bjfl bzhj fh bsklje bfkjlezbkjf.",
+				"urltextpage": ""
+			},
+			{
+				"type": "img",
+				"urlimg": "./data-source/img/imgtest.jpg"
+			}]
+		},
+		{
+			"key" : "8",
+			"title" : "IX - LEXIQUE",
+			"datasource" : [{
+				"type": "text",
+				"testtext": "hdaihdiua hjdbfsk jdfzu dphf zkjdbf zlbhfz fleu zfkjlezbkhj dbsjl dbfozbhlehz hb fslejhbf lj sbfkjl eblzlj ffjzek hjezkbjfzhbfjzbf jzekfj snbhvhbzfjhzfjahbejzhj rfbjzbefzhjbf jzbhjkf bzhjf zkjbfzj bhjez bfzhj fjbzhe jbfhzjbfhskjlnbfslnvjbsnh fzjkehfhl jezkjk fzkj fsjhghfbvgqhjskfjlzbfm bezjekfezljhfzkjbfh bzgkhf bze fzjkbefjkezhbjlkKQKFJKVBKJ NQHFKJLHQJLKFQKJL lbkj frbjlez bjfl bzhj fh bsklje bfkjlezbkjf.",
+				"urltextpage": ""
+			},
+			{
+				"type": "img",
+				"urlimg": "./data-source/img/imgtest.jpg"
+			}]
+		}
+	];
 };

@@ -1,0 +1,60 @@
+<html ng-app="myApp">
+<head>
+    <meta charset='utf-8' />
+	<link rel = "shortcut icon" href='data-source/img/favicon.ico'> 
+    <link rel="stylesheet" type="text/css" media="screen" href="styles-source/stylesheet.css">
+    <title>Test-Github-Page</title>
+	<script src="./js-source/angular.min.js"></script>
+	<script src="./data-source/datamenager.js"></script>
+	<script src="./js-source/main.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  </head>
+<body  data-ng-controller="angularctrl" data-ng-init="init()">
+<h1>Test-Github-Page</h1>
+<ul class="List-title">
+	<li  ng-repeat="node in liste" class="clickable"  data-ng-click='changeEtape(node.key)'><span>{{node.title}}<span></li>
+</ul>
+<div class="page-contenue">
+	<div class="" data-ng-show="etape == 0">
+		<span>{{liste[0].datasource[0].testtext}}</span>
+	</div>
+	<div class="" data-ng-show="etape == 1">
+		<img style="width: 300px; height: 300px;" src="{{liste[1].datasource[0].urlimg}}"></img>
+	</div>
+	<div class="" data-ng-show="etape == 2">
+		<embed width="420" height="345" src="http://www.youtube.com/v/RBumgq5yVrA" type="application/x-shockwave-flash">
+		</embed>
+	</div>
+	<div class="" data-ng-show="etape == 3">
+		<span>{{liste[3].datasource[0].testtext}}</span>
+		<img style="width: 300px; height: 300px;" src="{{liste[3].datasource[1].urlimg}}"></img>
+	</div>
+	<div class="" data-ng-show="etape == 4">
+		<div data-ng-mouseover="openImage()" data-ng-mouseleave="hideImage()">{{liste[4].datasource[0].testtext}}</div>
+		<img data-ng-show="openImgAction" style="width: 300px; height: 300px;" src="{{liste[4].datasource[1].urlimg}}"></img>
+	</div>
+	<div class="" data-ng-show="etape == 5">
+		<div ng-repeat="L in liste[5].datasource">
+			<h5 class="clickable" data-ng-click="openSoustitle(L.soustitle)">{{L.soustitle}}</h5>
+			<div data-ng-show="soustitlestatus == L.soustitle">
+				<div>{{L.souscontenue[0].testtext}}</div>
+				<img style="width: 300px; height: 300px;" src="{{L.souscontenue[1].urlimg}}"></img>
+			</div>
+		<div>
+	</div>
+	<div class="" data-ng-show="etape == 6">
+		<span>{{liste[6].datasource[0].testtext}}</span>
+		<img style="width: 300px; height: 300px;" src="{{liste[6].datasource[1].urlimg}}"></img>
+	</div>
+	<div class="" data-ng-show="etape == 7">
+		<span>{{liste[7].datasource[0].testtext}}</span>
+		<img style="width: 300px; height: 300px;" src="{{liste[7].datasource[1].urlimg}}"></img>
+	</div>
+	<div class="" data-ng-show="etape == 8">
+		<span>{{liste[8].datasource[0].testtext}}</span>
+		<img style="width: 300px; height: 300px;" src="{{liste[3].datasource[1].urlimg}}"></img>
+	</div>
+</div>
+</body>
+</html>
