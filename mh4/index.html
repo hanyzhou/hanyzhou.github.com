@@ -1,0 +1,77 @@
+<html ng-app="app.mp4">
+<head>
+	<meta charset="utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+	<script src="json/static_skills.js"></script>
+	<script src="json/static_equipes.js"></script>
+	<script src="json/static_decos.js"></script>
+	<script src="scripte.js"></script>
+</head>
+<body>
+<div ng-controller="equipeComputer">
+	{{loading | json}}
+	<div class='tag-editor-content'>
+		<ul class='tag-view-zone'>
+			<li ng-repeat='tag in wantSkills' class='list-tag-li'>
+				<span>{{tag}}</span><button class='btn-cross' ng-click='deleteSkill($index)'>X</button>
+			</li>
+		</ul>
+		<div class='tag-edit-zone'>
+			<select ng-model='newTag' ng-options='v.name for v in allSkills'></select>
+		</div>
+	</div>
+	<button ng-click='computer()'>get result</button>
+	<!--<h1>Head</h1>
+		<div ng-repeat='head in equipefilter.head'><label>{{head.name}}:</label>
+		<span ng-repeat='sk in head.skill'>{{sk.name}} / {{sk.value}} ;</span></div>
+	<h1>Body</h1>
+		<div ng-repeat='head in equipefilter.body'><label>{{head.name}}:</label>
+		<span ng-repeat='sk in head.skill'>{{sk.name}} / {{sk.value}} ;</span></div>
+	</br>
+	<h1>Arm</h1>
+		<div ng-repeat='head in equipefilter.arm'><label>{{head.name}}:</label>
+		<span ng-repeat='sk in head.skill'>{{sk.name}} / {{sk.value}} ;</span></div>
+	</br>
+	<h1>Waist</h1>
+		<div ng-repeat='head in equipefilter.waist'><label>{{head.name}}:</label>
+		<span ng-repeat='sk in head.skill'>{{sk.name}} / {{sk.value}} ;</span></div>
+	</br>
+	<h1>Leg</h1>
+		<div ng-repeat='head in equipefilter.leg'><label>{{head.name}}:</label>
+		<span ng-repeat='sk in head.skill'>{{sk.name}} / {{sk.value}} ;</span></div>
+	</br>-->
+	I have {{result.length}} result. They are:
+	<table>
+		<thead>
+			<th>Head</th>
+			<th>Body</th>
+			<th>Arm</th>
+			<th>Waist</th>
+			<th>Leg</th>
+			<th>Decos</th>
+			<th>Stone</th>
+		<thead>
+		<tbody ng-repeat='group in result'>
+			<tr ng-init='showDetail = false' ng-click='showDetail = !showDetail'>
+				<td>{{group.head.name}}</td>
+				<td>{{group.body.name}}</td>
+				<td>{{group.arm.name}}</td>
+				<td>{{group.waist.name}}</td>
+				<td>{{group.leg.name}}</td>
+				<td>{{group.decos.name}}</td>
+				<td>{{group.stone.name}}</td>
+			</tr>
+			<tr ng-show='showDetail' ng-repeat='n in [0,1,2,3,4]'>
+				<td>{{group.head.skill[n].name}} / {{group.head.skill[n].value}}</td>
+				<td>{{group.body.skill[n].name}} / {{group.body.skill[n].value}}</td>
+				<td>{{group.arm.skill[n].name}} / {{group.arm.skill[n].value}}</td>
+				<td>{{group.waist.skill[n].name}} / {{group.waist.skill[n].value}}</td>
+				<td>{{group.leg.skill[n].name}} / {{group.leg.skill[n].value}}</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>
